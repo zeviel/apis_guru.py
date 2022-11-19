@@ -8,7 +8,7 @@ class APIsGuru:
 		}
 
 	def get_all_apis(self) -> dict:
-		return geet(
+		return get(
 			f"{self.api}/list.json",
 			headers=self.headers).json()
 
